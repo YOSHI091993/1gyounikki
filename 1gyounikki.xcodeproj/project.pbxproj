@@ -13,9 +13,13 @@
 		95B0A33C24CAECA500216850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B0A33A24CAECA500216850 /* Main.storyboard */; };
 		95B0A33E24CAECA700216850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B0A33D24CAECA700216850 /* Assets.xcassets */; };
 		95B0A34124CAECA700216850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B0A33F24CAECA700216850 /* LaunchScreen.storyboard */; };
+		95B0A34924CAF64F00216850 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0A34824CAF64F00216850 /* InputViewController.swift */; };
+		B94E57A018AB24C417E013A0 /* Pods_1gyounikki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4938D9DA0987CCDADC55202 /* Pods_1gyounikki.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1577BD3EF9B80684B611D39E /* Pods-1gyounikki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1gyounikki.release.xcconfig"; path = "Target Support Files/Pods-1gyounikki/Pods-1gyounikki.release.xcconfig"; sourceTree = "<group>"; };
+		39251153B93060136C916287 /* Pods-1gyounikki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1gyounikki.debug.xcconfig"; path = "Target Support Files/Pods-1gyounikki/Pods-1gyounikki.debug.xcconfig"; sourceTree = "<group>"; };
 		95B0A33124CAECA500216850 /* 1gyounikki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1gyounikki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B0A33424CAECA500216850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95B0A33624CAECA500216850 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		95B0A33D24CAECA700216850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95B0A34024CAECA700216850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95B0A34224CAECA700216850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B0A34824CAF64F00216850 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		E4938D9DA0987CCDADC55202 /* Pods_1gyounikki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1gyounikki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94E57A018AB24C417E013A0 /* Pods_1gyounikki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5868C1D9A773584085267305 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39251153B93060136C916287 /* Pods-1gyounikki.debug.xcconfig */,
+				1577BD3EF9B80684B611D39E /* Pods-1gyounikki.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		95B0A32824CAECA500216850 = {
 			isa = PBXGroup;
 			children = (
 				95B0A33324CAECA500216850 /* 1gyounikki */,
 				95B0A33224CAECA500216850 /* Products */,
+				5868C1D9A773584085267305 /* Pods */,
+				CCBC74CFA2F611028E899859 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +78,21 @@
 				95B0A33424CAECA500216850 /* AppDelegate.swift */,
 				95B0A33624CAECA500216850 /* SceneDelegate.swift */,
 				95B0A33824CAECA500216850 /* ViewController.swift */,
+				95B0A34824CAF64F00216850 /* InputViewController.swift */,
 				95B0A33A24CAECA500216850 /* Main.storyboard */,
 				95B0A33D24CAECA700216850 /* Assets.xcassets */,
 				95B0A33F24CAECA700216850 /* LaunchScreen.storyboard */,
 				95B0A34224CAECA700216850 /* Info.plist */,
 			);
 			path = 1gyounikki;
+			sourceTree = "<group>";
+		};
+		CCBC74CFA2F611028E899859 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4938D9DA0987CCDADC55202 /* Pods_1gyounikki.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95B0A34524CAECA700216850 /* Build configuration list for PBXNativeTarget "1gyounikki" */;
 			buildPhases = (
+				CCF12AFC88C7FBA7DD826998 /* [CP] Check Pods Manifest.lock */,
 				95B0A32D24CAECA500216850 /* Sources */,
 				95B0A32E24CAECA500216850 /* Frameworks */,
 				95B0A32F24CAECA500216850 /* Resources */,
+				810CDEFB142CC3246DDB681E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		810CDEFB142CC3246DDB681E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-1gyounikki/Pods-1gyounikki-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-1gyounikki/Pods-1gyounikki-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-1gyounikki/Pods-1gyounikki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF12AFC88C7FBA7DD826998 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-1gyounikki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95B0A32D24CAECA500216850 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +213,7 @@
 				95B0A33924CAECA500216850 /* ViewController.swift in Sources */,
 				95B0A33524CAECA500216850 /* AppDelegate.swift in Sources */,
 				95B0A33724CAECA500216850 /* SceneDelegate.swift in Sources */,
+				95B0A34924CAF64F00216850 /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +355,7 @@
 		};
 		95B0A34624CAECA700216850 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39251153B93060136C916287 /* Pods-1gyounikki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		95B0A34724CAECA700216850 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1577BD3EF9B80684B611D39E /* Pods-1gyounikki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
