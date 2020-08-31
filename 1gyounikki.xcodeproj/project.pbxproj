@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		95B0A33E24CAECA700216850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B0A33D24CAECA700216850 /* Assets.xcassets */; };
 		95B0A34124CAECA700216850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B0A33F24CAECA700216850 /* LaunchScreen.storyboard */; };
 		95B0A34924CAF64F00216850 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0A34824CAF64F00216850 /* InputViewController.swift */; };
+		95B86B4A24CAFE70004C3C1A /* diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B86B4924CAFE70004C3C1A /* diary.swift */; };
 		B94E57A018AB24C417E013A0 /* Pods_1gyounikki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4938D9DA0987CCDADC55202 /* Pods_1gyounikki.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		95B0A34024CAECA700216850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95B0A34224CAECA700216850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95B0A34824CAF64F00216850 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		95B86B4924CAFE70004C3C1A /* diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diary.swift; sourceTree = "<group>"; };
 		E4938D9DA0987CCDADC55202 /* Pods_1gyounikki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1gyounikki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,7 +52,6 @@
 				39251153B93060136C916287 /* Pods-1gyounikki.debug.xcconfig */,
 				1577BD3EF9B80684B611D39E /* Pods-1gyounikki.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				95B0A33424CAECA500216850 /* AppDelegate.swift */,
+				95B86B4924CAFE70004C3C1A /* diary.swift */,
 				95B0A33624CAECA500216850 /* SceneDelegate.swift */,
 				95B0A33824CAECA500216850 /* ViewController.swift */,
 				95B0A34824CAF64F00216850 /* InputViewController.swift */,
@@ -210,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B86B4A24CAFE70004C3C1A /* diary.swift in Sources */,
 				95B0A33924CAECA500216850 /* ViewController.swift in Sources */,
 				95B0A33524CAECA500216850 /* AppDelegate.swift in Sources */,
 				95B0A33724CAECA500216850 /* SceneDelegate.swift in Sources */,
