@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9585C7FE2502477800C53923 /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 9585C7FD2502477800C53923 /* icon1024.png */; };
 		95B0A33524CAECA500216850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0A33424CAECA500216850 /* AppDelegate.swift */; };
 		95B0A33724CAECA500216850 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0A33624CAECA500216850 /* SceneDelegate.swift */; };
 		95B0A33924CAECA500216850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0A33824CAECA500216850 /* ViewController.swift */; };
@@ -21,7 +22,8 @@
 /* Begin PBXFileReference section */
 		1577BD3EF9B80684B611D39E /* Pods-1gyounikki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1gyounikki.release.xcconfig"; path = "Target Support Files/Pods-1gyounikki/Pods-1gyounikki.release.xcconfig"; sourceTree = "<group>"; };
 		39251153B93060136C916287 /* Pods-1gyounikki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1gyounikki.debug.xcconfig"; path = "Target Support Files/Pods-1gyounikki/Pods-1gyounikki.debug.xcconfig"; sourceTree = "<group>"; };
-		95B0A33124CAECA500216850 /* 1gyounikki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1gyounikki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9585C7FD2502477800C53923 /* icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1024.png; sourceTree = "<group>"; };
+		95B0A33124CAECA500216850 /* 一行日記.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "一行日記.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B0A33424CAECA500216850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95B0A33624CAECA500216850 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		95B0A33824CAECA500216850 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 		95B0A33224CAECA500216850 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95B0A33124CAECA500216850 /* 1gyounikki.app */,
+				95B0A33124CAECA500216850 /* 一行日記.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +84,7 @@
 				95B0A33824CAECA500216850 /* ViewController.swift */,
 				95B0A34824CAF64F00216850 /* InputViewController.swift */,
 				95B0A33A24CAECA500216850 /* Main.storyboard */,
+				9585C7FD2502477800C53923 /* icon1024.png */,
 				95B0A33D24CAECA700216850 /* Assets.xcassets */,
 				95B0A33F24CAECA700216850 /* LaunchScreen.storyboard */,
 				95B0A34224CAECA700216850 /* Info.plist */,
@@ -116,7 +119,7 @@
 			);
 			name = 1gyounikki;
 			productName = 1gyounikki;
-			productReference = 95B0A33124CAECA500216850 /* 1gyounikki.app */;
+			productReference = 95B0A33124CAECA500216850 /* 一行日記.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95B0A32C24CAECA500216850 /* Build configuration list for PBXProject "1gyounikki" */;
+			buildConfigurationList = 95B0A32C24CAECA500216850 /* Build configuration list for PBXProject "一行日記" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,6 +163,7 @@
 				95B0A34124CAECA700216850 /* LaunchScreen.storyboard in Resources */,
 				95B0A33E24CAECA700216850 /* Assets.xcassets in Resources */,
 				95B0A33C24CAECA500216850 /* Main.storyboard in Resources */,
+				9585C7FE2502477800C53923 /* icon1024.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,10 +372,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.sho.yoshiwa.-gyounikki";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "一行日記";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,17 +392,18 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.sho.yoshiwa.-gyounikki";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "一行日記";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95B0A32C24CAECA500216850 /* Build configuration list for PBXProject "1gyounikki" */ = {
+		95B0A32C24CAECA500216850 /* Build configuration list for PBXProject "一行日記" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95B0A34324CAECA700216850 /* Debug */,
